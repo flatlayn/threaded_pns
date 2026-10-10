@@ -1,0 +1,17 @@
+# Prime Number Threading Assignment - Configuration
+#
+# threads: Number of threads to use (1-64 recommended)
+# max_number: Find all primes from 2 to this value (inclusive)
+#
+# Usage:
+#   cargo run --bin variant1_range_immediate
+#   cargo run --bin variant2_range_deferred
+#   cargo run --bin variant3_div_immediate
+#   cargo run --bin variant4_div_deferred
+#
+# For release builds (much faster):
+#   cargo run --release --bin variant1_range_immediate
+
+threads = 4
+max_number = 1000
+

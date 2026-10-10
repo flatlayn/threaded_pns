@@ -4,3 +4,31 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.8"
+chrono = "0.4"
+
+# Shared library for config loading
+[lib]
+name = "primes"
+path = "src/lib.rs"
+
+# Variant 1: Range Division + Immediate Print
+[[bin]]
+name = "variant1"
+path = "src/bin/variant1.rs"
+
+# Variant 2: Range Division + Deferred Print
+[[bin]]
+name = "variant2"
+path = "src/bin/variant2.rs"
+
+# Variant 3: Divisibility Division + Immediate Print
+[[bin]]
+name = "variant3"
+path = "src/bin/variant3.rs"
+
+# Variant 4: Divisibility Division + Deferred Print
+[[bin]]
+name = "variant4"
+path = "src/bin/variant4.rs"
